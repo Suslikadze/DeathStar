@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon May 06 11:46:49 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : SHT_cyclone4
+Top-level Entity Name : SHT
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,198 / 22,320 ( 5 % )
+    Total combinational functions : 693 / 22,320 ( 3 % )
+    Dedicated logic registers : 948 / 22,320 ( 4 % )
+Total registers : 948
+Total pins : 21 / 154 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 442,368 / 608,256 ( 73 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,1752 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do SHT_cyclone4_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:36:59 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:36:59 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -2008 -work work {C:/Users/Ruslan/Desktop/count_n_modul.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:36:59 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/Users/Ruslan/Desktop/count_n_modul.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity count_n_modul
+# -- Compiling architecture beh of count_n_modul
+# End time: 14:36:59 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -2008 -work work {C:/projects/SHT/simulation/modelsim/SHT.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:36:59 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/simulation/modelsim/SHT.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHT_vhd_tst
+# -- Compiling architecture SHT_arch of SHT_vhd_tst
+# End time: 14:36:59 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  SHT_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" SHT_vhd_tst 
+# Start time: 14:37:00 on Apr 25,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.sht_vhd_tst(sht_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sht(shi_arch)
+# Loading work.count_n_modul(beh)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# 
+# do C:/projects/SHT/wave.do
+# 
+# _add_menu main controls right SystemButtonFace black RUN_1uS   {run 1000000}
+# _add_menu main controls right SystemButtonFace blue RUN_10uS   {run 10000000}
+# _add_menu main controls right SystemButtonFace red  RUN_100uS  {run 100000000}
+# _add_menu main controls right SystemButtonFace green RUN_1mS   {run 1000000000}
+# _add_menu main controls right SystemButtonFace magenta  RUN_10mS   {run 10000000000}
+# _add_menu main controls right SystemButtonFace yellow  RUN_100mS   {run 100000000000}
+# 
+# 
+# add wave -noupdate -divider MAIN_INOUT
+# add wave -position 1  sim:/sht_vhd_tst/i1/SDA
+# add wave -position 2  sim:/sht_vhd_tst/i1/SCK
+# add wave -position 3  sim:/sht_vhd_tst/i1/sclk
+# add wave -position 4  sim:/sht_vhd_tst/i1/rst
+# add wave -position 5  sim:/sht_vhd_tst/i1/en
+# 
+# add wave -noupdate -divider Clock
+# add wave -position end  sim:/sht_vhd_tst/i1/aux_clk
+# add wave -position end  sim:/sht_vhd_tst/i1/data_clk
+# ** Error: (vish-4014) No objects found matching '/sht_vhd_tst/i1/data_clk'.
+# Error in macro C:\projects\SHT\wave.do line 19
+# (vish-4014) No objects found matching '/sht_vhd_tst/i1/data_clk'.
+#     while executing
+# "add wave -position end  sim:/sht_vhd_tst/i1/data_clk"
+add wave -position end  sim:/sht_vhd_tst/i1/bus_clk
+add wave -position end  sim:/sht_vhd_tst/i1/j
+add wave -position end  sim:/sht_vhd_tst/i1/i
+add wave -position end  sim:/sht_vhd_tst/i1/pr_state
+# ** Fatal: (vsim-3421) Value 61 is out of range 0 to 60.
+#    Time: 2420 ps  Iteration: 1  Process: /sht_vhd_tst/i1/line__76 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__76 at C:/projects/SHT/SHT V4.vhd line 80
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 80 Process line__76
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:38:18 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:38:18 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:43:34 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:43:34 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 4694460 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 211
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 211 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:44:54 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:44:55 on Apr 25,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5856460 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 211
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 211 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:45:29 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:45:29 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6020 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 7018460 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 211
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 211 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:46:07 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:46:08 on Apr 25,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5809980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 211
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 211 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:49:33 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:49:33 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5639980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:30 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:50:31 on Apr 25,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:56 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:50:56 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 429980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 150
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 150 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:16 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:52:16 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 429980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 150
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 150 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:59 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 14:52:59 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 429980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 150
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 150 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:23:53 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:23:54 on Apr 25,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5349980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:26:00 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:26:00 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5369980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:26:26 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:26:26 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 429980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 150
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 150 Process line__91
+# 
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:27:39 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:27:39 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 429980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 150
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 150 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:28:48 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:28:48 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5379980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:31:54 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# ** Error: C:/projects/SHT/SHT V4.vhd(147): near "then": syntax error
+# ** Error: C:/projects/SHT/SHT V4.vhd(151): near "elsIf": (vcom-1576) expecting END or WHEN.
+# ** Error: C:/projects/SHT/SHT V4.vhd(161): near "WHEN": (vcom-1576) expecting END.
+# ** Error: C:/projects/SHT/SHT V4.vhd(170): near "When": (vcom-1576) expecting END.
+# End time: 15:31:54 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 1
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:32:43 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:32:43 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 429980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 150
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 150 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:33:08 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:33:08 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5379980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:34:42 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:34:42 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5349980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:03 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# ** Error: C:/projects/SHT/SHT V4.vhd(224): near "WHEN": (vcom-1576) expecting END.
+# ** Error: C:/projects/SHT/SHT V4.vhd(240): VHDL Compiler exiting
+# End time: 15:39:03 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:39:35 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:39:35 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 5349980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 214
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 214 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:40:16 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:40:16 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 819980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+add wave -position end  sim:/sht_vhd_tst/i1/data_temp
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 819980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:42:18 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:42:18 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -2 is out of range 15 downto 0.
+#    Time: 799980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:43:11 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:43:11 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 799980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:11 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:44:11 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 799980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:44:56 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:44:56 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 799980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:45:07 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:45:07 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 799980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:48:29 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:48:29 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -4 is out of range 15 downto 0.
+#    Time: 819980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:48:56 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:48:56 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -4 is out of range 15 downto 0.
+#    Time: 819980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 215
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 215 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:07 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:50:07 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 809980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 216
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 216 Process line__91
+# 
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:53:17 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 15:53:17 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 809980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 216
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 216 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:36 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:11:36 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -3 is out of range 15 downto 0.
+#    Time: 809980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 216
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 216 Process line__91
+# 
+add wave -position end  sim:/sht_vhd_tst/i1/data_RH
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:46 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:12:46 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 999980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 231
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 231 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:13:18 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:13:18 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 999980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 231
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 231 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:14:18 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:14:18 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 989980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 231
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 231 Process line__91
+# 
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:14:42 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:14:43 on Apr 25,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 989980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 231
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 231 Process line__91
+# 
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:17:34 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:17:34 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 15 downto 0.
+#    Time: 989980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 232
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 232 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:21:36 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:21:36 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:23:43 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:23:43 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:24:31 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:24:31 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:44:30 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:44:30 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 409980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 149
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 149 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:45:18 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:45:18 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:49:45 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:49:45 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value 8 is out of range 7 downto 0.
+#    Time: 269980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 149
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 149 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:50:14 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:50:14 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Fatal: (vsim-3734) Index value -1 is out of range 7 downto 0.
+#    Time: 409980 ps  Iteration: 2  Process: /sht_vhd_tst/i1/line__91 File: C:/projects/SHT/SHT V4.vhd
+# Fatal error in Process line__91 at C:/projects/SHT/SHT V4.vhd line 149
+# 
+# HDL call sequence:
+# Stopped at C:/projects/SHT/SHT V4.vhd 149 Process line__91
+# 
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:50:36 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 16:50:36 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+add wave -position end  sim:/sht_vhd_tst/i1/command_in
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:18:24 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:18:24 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:19:31 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:19:31 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:20:04 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:20:04 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+restart
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:21:37 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:21:37 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:22:41 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:22:41 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:24:40 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:24:40 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:25:06 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 17:25:06 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+add wave -position end  sim:/sht_vhd_tst/i1/loop_rst
+vcom -2008 -work work {C:/projects/SHT/SHT V4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:12 on Apr 25,2019
+# vcom -reportprogress 300 -2008 -work work C:/projects/SHT/SHT V4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHT
+# -- Compiling architecture SHI_arch of SHT
+# ** Warning: C:/projects/SHT/SHT V4.vhd(48): (vcom-1236) Shared variables must be of a protected type.
+# End time: 18:15:12 on Apr 25,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.sht(shi_arch)
+# ** Warning: (vsim-8684) No drivers exist on out port /sht_vhd_tst/i1/data(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /sht_vhd_tst/data(15 downto 1).
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4980 ps  Iteration: 2  Instance: /sht_vhd_tst/i1/counter
+# Break key hit
+# Break in Process line__76 at C:/projects/SHT/SHT V4.vhd line 76

@@ -1,0 +1,18 @@
+
+_add_menu main controls right SystemButtonFace black RUN_1uS   {run 1000000}
+_add_menu main controls right SystemButtonFace blue RUN_10uS   {run 10000000}
+_add_menu main controls right SystemButtonFace red  RUN_100uS  {run 100000000}
+_add_menu main controls right SystemButtonFace green RUN_1mS   {run 1000000000}
+_add_menu main controls right SystemButtonFace magenta  RUN_10mS   {run 10000000000}
+_add_menu main controls right SystemButtonFace yellow  RUN_100mS   {run 100000000000}
+
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+
+add wave -noupdate -divider SYNC_GEN
+
+
+add wave -noupdate -divider Image_SEnsor

@@ -1,0 +1,12 @@
+
+State Machine - |SHT|pr_state
+Name pr_state.ACK3 pr_state.ACK2 pr_state.ACK pr_state.broadcast2 pr_state.broadcast1 pr_state.measurement pr_state.address pr_state.T_S2 pr_state.T_S 
+pr_state.T_S 0 0 0 0 0 0 0 0 0 
+pr_state.T_S2 0 0 0 0 0 0 0 1 1 
+pr_state.address 0 0 0 0 0 0 1 0 1 
+pr_state.measurement 0 0 0 0 0 1 0 0 1 
+pr_state.broadcast1 0 0 0 0 1 0 0 0 1 
+pr_state.broadcast2 0 0 0 1 0 0 0 0 1 
+pr_state.ACK 0 0 1 0 0 0 0 0 1 
+pr_state.ACK2 0 1 0 0 0 0 0 0 1 
+pr_state.ACK3 1 0 0 0 0 0 0 0 1 

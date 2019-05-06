@@ -1,0 +1,14 @@
+Library ieee;
+USE ieee.std_logic_1164.all;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+------------------------------------------------
+
+Entity SHT is
+Port(
+--System signals:
+	sclk, rst, en	: in std_logic;
+	data				: in std_logic_vector(15 downto 0);
+--I2C signals:
+	
+	
+	

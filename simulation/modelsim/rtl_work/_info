@@ -1,0 +1,135 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/projects/SHT/simulation/modelsim
+Ecount_n_modul
+Z1 w1554823685
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/Ruslan/Desktop/count_n_modul.vhd
+Z6 FC:/Users/Ruslan/Desktop/count_n_modul.vhd
+l0
+L5
+VegSLO[28PEl_;]LA<EG>82
+!s100 5H4e5Lk^jU3o6IeWUc3gb2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1556192219
+!i10b 1
+Z9 !s108 1556192219.000000
+Z10 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Ruslan/Desktop/count_n_modul.vhd|
+Z11 !s107 C:/Users/Ruslan/Desktop/count_n_modul.vhd|
+!i113 1
+Z12 o-2008 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 13 count_n_modul 0 22 egSLO[28PEl_;]LA<EG>82
+l19
+L17
+V[03;9;l51i<[IJ0eNZRQB0
+!s100 cd;2?`l]fEA987dh>S`AM2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Esht
+Z14 w1556205059
+R2
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z17 8C:/projects/SHT/SHT V4.vhd
+Z18 FC:/projects/SHT/SHT V4.vhd
+l0
+L7
+VhEIXGamXh::`l47diSkCX1
+!s100 c`HK^`B1G><7mUJP;19<k2
+R7
+33
+Z19 !s110 1556205312
+!i10b 1
+Z20 !s108 1556205312.000000
+Z21 !s90 -reportprogress|300|-2008|-work|work|C:/projects/SHT/SHT V4.vhd|
+Z22 !s107 C:/projects/SHT/SHT V4.vhd|
+!i113 1
+R12
+R13
+Ashi_arch
+R2
+R15
+R16
+R3
+R4
+Z23 DEx4 work 3 sht 0 22 hEIXGamXh::`l47diSkCX1
+l57
+L20
+V]T_7j6ckM>K4Fdah;<Q=^0
+!s100 LIH>>iKMY1_3g1njCf5l>1
+R7
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R12
+R13
+Esht_vhd_tst
+Z24 w1555427897
+R3
+R4
+R0
+Z25 8C:/projects/SHT/simulation/modelsim/SHT.vht
+Z26 FC:/projects/SHT/simulation/modelsim/SHT.vht
+l0
+L30
+VAzS6obPgZ6Mg`WAj:if`H2
+!s100 Ud2B7]fW:];8kH6eY69e`2
+R7
+33
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-2008|-work|work|C:/projects/SHT/simulation/modelsim/SHT.vht|
+Z28 !s107 C:/projects/SHT/simulation/modelsim/SHT.vht|
+!i113 1
+R12
+R13
+Asht_arch
+R3
+R4
+DEx4 work 11 sht_vhd_tst 0 22 AzS6obPgZ6Mg`WAj:if`H2
+l54
+L32
+Vjc<lBAk@@FD>;:@YhnJ9e2
+!s100 ?R:dIic2gc@elOa67Nafk0
+R7
+33
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
